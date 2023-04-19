@@ -26,6 +26,7 @@
 #include "ThrustMaster.h"
 
 static Joystick *createJoystick() {
+  return new Sidewinder;
 
   const auto sw1 = DigitalInput<14, true>{}.isLow();
   const auto sw2 = DigitalInput<15, true>{}.isLow();
